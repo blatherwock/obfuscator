@@ -10,6 +10,7 @@ class TestObfuscator < Test::Unit::TestCase
   def test_obfuscate_empty
     assert_equal('', Obfuscator.obfuscate(''))
   end
+
   #
   # Tests obfuscating a string.
   #
@@ -17,6 +18,7 @@ class TestObfuscator < Test::Unit::TestCase
     str = 'test string'
     assert_not_equal(str, Obfuscator.obfuscate(str))
   end
+
   #
   # Tests obfuscating and then deobfuscating a string.
   #
@@ -27,6 +29,7 @@ class TestObfuscator < Test::Unit::TestCase
     str = "test string non-ascii \u0100"
     assert_equal(str, Obfuscator.deobfuscate(Obfuscator.obfuscate(str)))
   end
+
   #
   # Tests deobfuscating the empty sring.
   #
