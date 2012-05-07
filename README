@@ -1,0 +1,4 @@
+Obfuscator.
+Copyright (c) 2012 John Peloquin and Joseph Baker. All rights reserved.
+
+These classes provide methods to obfuscate and deobfuscate textual strings. The obfuscation is not intended to provide any real security, just to prevent casual reading by humans and machines.
